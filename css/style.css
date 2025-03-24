@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #333333;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 600px;
+    margin: 30px auto;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.panel{
+    width: 200px;
+    height: 200px;
+    background-color: #00cc99;
+    color: #ffffff;
+    text-align: center;
+    line-height: 200px;
+    border-radius: 10px;
+}
+.panel1{
+    position: relative;
+    top: 35px;
+    left: 35px;
+}
+.panel3{
+    position: relative;
+    top: 35px;
+    right: 35px;
+}
+.panel6{
+    position: relative;
+    bottom: 35px;
+    left: 35px;
+}
+.panel8{
+    position: relative;
+    bottom: 35px;
+    right: 35px;
+}
+.task1 .center{
+    border-radius: 50%;
+    background-color: #009999;
+}
