@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+.task1{
     background-color: #333333;
 }
 .container{
@@ -46,4 +48,35 @@
 .task1 .center{
     border-radius: 50%;
     background-color: #009999;
+}
+
+.task2__box{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    border-radius: 10px;
+}
+.red{
+    background: red;
+}
+.green{
+    background-color: green;
+    top: 0;
+    right: 0;
+}
+.blue{
+    background-color: blue;
+    bottom: 0;
+}
+.purple{
+    background-color: purple;
+    bottom: 0;
+    right: 0;
+}
+.grey{
+    background-color: grey;
+    top: calc(50% - 100px);
+    left: calc(50% - 100px);
 }
