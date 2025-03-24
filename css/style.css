@@ -3,18 +3,43 @@
     padding: 0;
     box-sizing: border-box;
 }
+.task{
+    background-color: #fff;
+    border: none;
+    text-decoration: none;
+    color: black;
+    box-shadow: 0px 0px 10px grey;
+    width: 100px;
+    height: 30px;
+    line-height: 25px;
+    border-radius: 5px;
+    padding: 4px 12px;
+    text-align: center;
+    transition: all 0.5s;
+}
+.task:hover{
+    background-color: rgb(132, 177, 219);
+    transition: all 0.5s;
+    color: rgb(207, 89, 89);
+}
+
 .task1{
     background-color: #333333;
 }
 .container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    max-width: 600px;
+    max-width: 420px;
     margin: 30px auto;
     gap: 50px;
     justify-content: center;
     align-items: center;
     position: relative;
+}
+.container.figma{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .panel{
     width: 200px;
@@ -79,4 +104,53 @@
     background-color: grey;
     top: calc(50% - 100px);
     left: calc(50% - 100px);
+}
+
+.task3-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+.block {
+    position: relative;
+    width: 200px;
+    height: 400px;
+}
+
+.blue-section {
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+}
+
+.pink-section {
+    position: relative;
+    background-color: pink;
+    width: 200px;
+    height: 200px;
+}
+.pink{
+   top: 20px; 
+}
+.grey {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+    z-index: 10;
+}
+
+.gray-block1{
+    top: 0;
+    left: 0;
+}
+.gray-block2{
+    top: 10px;
+}
+.gray-block3{
+    top: 20px;
 }
